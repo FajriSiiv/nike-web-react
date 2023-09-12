@@ -1,0 +1,1 @@
+- Don't forget adding detail from "Popular Product" Section
