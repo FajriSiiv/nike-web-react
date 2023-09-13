@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { copyrightSign } from "../assets/icons";
 import { footerLogo } from "../assets/images";
 import { footerLinks, socialMedia } from "../constants";
@@ -8,9 +9,9 @@ const Footer = () => {
     <footer className="max-container">
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
         <div className="flex flex-col items-start">
-          <a href="/">
+          <Link href="/">
             <img src={footerLogo} width={150} height={46} />
-          </a>
+          </Link>
           <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             totam vel debitis odit ipsam ipsa. Lorem ipsum dolor sit.
@@ -39,7 +40,7 @@ const Footer = () => {
                     className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray"
                     key={lin.name}
                   >
-                    <a href="">{lin.name}</a>
+                    <Link href="">{lin.name}</Link>
                   </li>
                 ))}
               </ul>

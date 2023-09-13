@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
@@ -6,9 +7,9 @@ const NotFound = () => {
       <h1 className="font-bold font-palanquin text-coral-red text-8xl">
         404 Page
       </h1>
-      <a href="/" className="text-xl underline font-montserrat">
+      <Link href="/" className="text-xl underline font-montserrat">
         Go Back
-      </a>
+      </Link>
     </div>
   );
 };
