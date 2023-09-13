@@ -6,11 +6,12 @@ import Button from "../components/Button";
 import { products } from "../constants";
 
 const DetailProduct = () => {
-  const { id } = useParams();
+  const { detailId } = useParams();
+
   const detail = products.filter((product) => {
     const productName = product.name.replace(/[\s-]/g, "");
 
-    return productName === id;
+    return productName === detailId;
   });
 
   if (detail.length === 0) return <NotFound />;

@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import Layout from "./Layout/index.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import DetailProduct from "./section/DetailProduct.jsx";
+import DetailProduct from "./section/[detailId].jsx";
 import NotFound from "./components/NotFound.jsx";
 
 const router = createBrowserRouter([
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/detail/:id",
+    path: "/detail/:detailId",
     element: (
       <Layout>
         <DetailProduct />
