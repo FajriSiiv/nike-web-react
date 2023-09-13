@@ -9,7 +9,7 @@ const PopularProductCard = ({ imgURL, name, price, rating }) => {
 
   return (
     <div className="flex flex-1 flex-col w-full max-sm:w-full">
-      <Link href={`/detail/${modifiedString}`}>
+      <Link to={`/detail/${modifiedString}`}>
         <img src={imgURL} alt={name} className="w-[280px] h-[280px]" />
       </Link>
 

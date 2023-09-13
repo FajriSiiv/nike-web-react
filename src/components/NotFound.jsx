@@ -7,7 +7,7 @@ const NotFound = () => {
       <h1 className="font-bold font-palanquin text-coral-red text-8xl">
         404 Page
       </h1>
-      <Link href="/" className="text-xl underline font-montserrat">
+      <Link to="/" className="text-xl underline font-montserrat">
         Go Back
       </Link>
     </div>
