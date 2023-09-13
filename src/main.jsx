@@ -5,7 +5,7 @@ import "./index.css";
 import Layout from "./Layout/index.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import DetailProduct from "./section/DetailProduct.jsx";
-import NotFound from "./components/404.jsx";
+import NotFound from "./components/NotFound.jsx";
 
 const router = createBrowserRouter([
   {

@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { star } from "../assets/icons";
-import NotFound from "../components/404";
+import NotFound from "../components/NotFound";
 import Button from "../components/Button";
 import { products } from "../constants";
 
